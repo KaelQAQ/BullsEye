@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>学习笔记</title> <!--title为标签
+		页的名字-->
+		
+		<!-- 将CSS放在hand里边 -->
+		<!-- css的语法
+		选择器 {
+			属性名：属性值；
+		}
+		示例如下
+		-->
+		<style> /*选择器{标签：值；*/  /*CSS文件通常另外编辑，后缀为.css，内容为标签{属性：数值}*/
+		/*当只需要执行某一标签下的某一个内容时候，使用：
+		如：
+		
+		<span class=“two”> 即为这个span命名为two  class可以使用其他名称，但不建议重名，主要使用class
+				2222
+		</span>*/
+		/*然后在css中使用
+		.two {
+			属性：数值：
+		}*/
+
+		/*星号为所有*/
+			/* 将h1标签（全部的颜色定义为红色，如下*/
+		/*h1 {color: red;	}*/
+		/*当要定义多个标签时，可以用都好，如下：
+		p,span {
+		}*/
+	
+		/*但逗号变为空格，则控制div旗下的所有子元素符合的进行匹配
+		div span {
+		}*/
+		/*如果加大于号，则只选子项目，而子项目及其子子项目等忽略，如：*/
+		/*div>span {*/
+		/*}*/
+
+		/*加号，选择跟在后面的同级别选项*/
+		
+		
+		</style>
+	</head>
+	<body> <!--style：属性，在其等号后添加CSS样式，比如用在body中，来改改变颜色-->
+	<h1>个人HTML学习记录</h1> <!--标题、P标签等元素为Block-level Elements，绝对独占一行；Inline Elements为不新起一行，后续添加的内容继续跟进，如span标签里的内容-->
+	<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2535537475,2736208807&fm=27&gp=0.jpg" width="160" height="90"> <!--img用于插入图片，src用来赋予地址，width用来定义宽度，height用来定义高度,style="font-size: 20px" -->
+	
+	<header>
+		<nav> <!--style="font-size: 20px"即是通过style使用CSS标签，赋予这个项目内容字体大小为20像素;style="background-color:powderblue;"即是添加背景色为蓝色，style标签通常放在Hand里边，因为body里边是给用户看的，层级更加分明-->
+		首页 案例 标签管理
+		</nav> <!--nav用来收录导航栏里项目具体的links-->
+		</header> <!--header是导航栏-->
+		<h2>简介</h2>
+		<p>这次的课程通过B站Doyoudo提供的教程作一个入门，学习进度根据视频更新情况进行安排。</p> <!--P用来装一段话-->
+		<h2>案例</h2> <!--form用于制作表格，如登录框-->
+		<form>
+			<h3>一、输入框</h3>
+			姓：<br>
+			<input type="text" name="姓"> <br> <!--input是输入-->
+			名：<br>
+			<input type="text" name="名">
+			<br>
+			<p>form用于制作表格，如登录框</p>
+			<h3>二、按钮</h3>
+			<button type="button" onclick="alert('不要瞎几把点')"> <!--type是类型，onclick是CSS文件定义的鼠标点击，alert是弹出警告，括号内是警告内容-->
+			登录
+			</button> <!--button是制作按钮，在起始位置定义按钮的内容，中间定义按钮显示内容-->
+			<p>type是类型，onclick是CSS文件定义的鼠标点击，alert是弹出警告，括号内是警告内容;<br>
+			button是制作按钮，在起始位置定义按钮的内容，中间定义按钮显示内容.</p>
+			
+			<h3>三、导航栏</h3>
+			<p>header是导航栏,nav用来收录导航栏里项目具体的links</p>
+			
+			<h3>四、block-level 和Inline elements</h3>
+			<p>标题、P标签等元素为Block-level Elements，绝对独占一行；Inline Elements为不新起一行，后续添加的内容继续跟进，如span标签里的内容.</p>
+			<h3>五、通过HTML属性，添加CSS样式</h3>
+			<p>style：属性，在其等号后添加CSS样式，比如用在body中，来改改变颜色,在nav中增加样式，其用法都是在头标签后加入</p>
+		</form>
+		<div>
+			<h2>标签掌握</h2>
+			<p>TML有大量的标签，用来提供各种展示的支持，因此，将每一个学到的标签及其含义记录下来是很有必要的.在这篇代码中，我将在每一个标签的使用后进行注释，并整理到<b>标签掌握</b>栏目进行汇总，整理如下：</p>
+			<ul>
+				<li>title为标签页的名字</li>
+				<li>img用于插入图片，src用来赋予地址，width用来定义宽度，height用来定义高度；</li>
+				<li>br用于换行</li>
+				<li>form用于制作表格，如登录框</li>
+				<li>div貌似是对一个区块进行整合；</li>
+				<li>span是用在CSS中，需要CSS来提供渲染，比如改个颜色啥的；</li>
+				<li>list用于项目符号,具体用法是：在<i>ul</i>的包含下，使用<i>li</i>标签对每一个项目进行标注为无序列表，使用ol标注为有序列表；</li>
+				<li>关于注释，使用括号后，使用<i>!--作为开始，--作为结束</i></li>
+			</ul>
+			
+		</div>
+	</body>
+</html>
