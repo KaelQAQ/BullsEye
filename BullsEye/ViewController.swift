@@ -56,18 +56,18 @@ class ViewController: UIViewController {
         //(后续添加一个提示奖励分数的方法)
         var title: String
         if difference == 0 {
-            title = "你丫真牛逼!"
+            title = "二货小老弟,你丫真牛逼!误差\(difference)分"
             points += 100
         }else if difference < 5 {
-            title = "就差那么一点儿!"
+            title = "二货小老弟,就差那么一点儿!误差\(difference)分"
             points += 50
         }else if difference < 10 {
-            title = "你...怎么回事!"
+            title = "二货小老弟...怎么回事!误差\(difference)分"
         }else {
-            title = "你丫就一手残党!"
+            title = "二货小老弟,你丫就一手残党!误差\(difference)分"
         }
         score += points
-        let mesage = "\n您的得分是: \(points)"
+        let mesage = "\n二货,你的得分是: \(points)"
         let alert = UIAlertController(title:title,
                                       message:mesage,
                                       preferredStyle: .alert)
